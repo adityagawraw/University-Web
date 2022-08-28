@@ -1,5 +1,6 @@
  let slides = document.getElementsByClassName('slides');
  let counter =1;
+ slides[0].style.display='block';
   let autoSlide = setInterval(increaseCounter,6000);
  autoSlide();
  slideShow();
@@ -7,7 +8,7 @@ function plusSlides(n){
     counter+=n;
     slideShow(counter);
     clearInterval(autoSlide);
-    autoSlide = setInterval(increaseCounter,1000);
+    autoSlide = setInterval(increaseCounter,6000);
 }
 
 function increaseCounter(){
